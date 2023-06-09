@@ -4,7 +4,9 @@ function UP1 () {
     basic.pause(1000)
 }
 input.onButtonPressed(Button.A, function () {
-    WALK()
+    for (let index = 0; index < 4; index++) {
+        WALK()
+    }
 })
 function DOWN1 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo1, 90)
@@ -61,12 +63,13 @@ input.onButtonPressed(Button.AB, function () {
 })
 function UP2 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo2, minVal)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo14, maxVal)
-    basic.pause(200)
+    basic.pause(1000)
 }
 input.onButtonPressed(Button.B, function () {
-    ROTATE()
+    for (let index = 0; index < 4; index++) {
+        ROTATE()
+    }
 })
 function DEFAULT () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo1, 90)
@@ -74,7 +77,7 @@ function DEFAULT () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo13, 90)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo14, 90)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo10, 90)
-    kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo6, maxVal)
+    kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo6, 90)
 }
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     DEFAULT()
@@ -89,9 +92,8 @@ function ROT2 () {
 }
 function DOWN2 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo2, 90)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo14, 90)
-    basic.pause(200)
+    basic.pause(1000)
 }
 let minVal = 0
 let maxVal = 0
