@@ -1,8 +1,7 @@
 function UP1 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo1, minVal)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo13, maxVal)
-    basic.pause(200)
+    basic.pause(1000)
 }
 input.onButtonPressed(Button.A, function () {
     UP1()
@@ -11,17 +10,16 @@ input.onButtonPressed(Button.A, function () {
 })
 function DOWN1 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo1, 90)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo13, 90)
-    basic.pause(200)
+    basic.pause(1000)
 }
 function ROT1 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo6, 90)
-    basic.pause(500)
+    basic.pause(1000)
 }
 function FOR2 () {
-    kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo10, 90)
-    basic.pause(500)
+    kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo10, 0)
+    basic.pause(1000)
 }
 // * Servo Assignments
 // 
@@ -65,24 +63,19 @@ input.onButtonPressed(Button.B, function () {
 })
 function DEFAULT () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo1, 90)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo2, 90)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo13, 90)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo14, 90)
-    basic.pause(200)
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo10, 90)
-    basic.pause(200)
-    kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo6, 90)
+    kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo6, maxVal)
 }
 function FOR1 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo10, maxVal)
-    basic.pause(500)
+    basic.pause(1000)
 }
 function ROT2 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo6, maxVal)
-    basic.pause(500)
+    basic.pause(1000)
 }
 function DOWN2 () {
     kitronik_i2c_16_servo.servoWrite(kitronik_i2c_16_servo.Servos.Servo2, 90)
