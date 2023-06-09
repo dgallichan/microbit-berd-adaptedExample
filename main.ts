@@ -92,9 +92,8 @@ function DOWN2 () {
 }
 let minVal = 0
 let maxVal = 0
-basic.showIcon(IconNames.Fabulous)
-kitronik_i2c_16_servo.adjustServos(-20)
-maxVal = 170
-minVal = 10
+basic.showIcon(IconNames.Happy)
+maxVal = 180
+minVal = 0
 basic.pause(1000)
 DEFAULT()

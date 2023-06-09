@@ -6,7 +6,7 @@
         "radio": "*",
         "microphone": "*",
         "servo": "*",
-        "pxt-kitronik-I2C-16-servo": "github:kitronikltd/pxt-kitronik-i2c-16-servo#v0.9.3"
+        "pxt-kitronik-I2C-16-servo": "github:dgallichan/pxt-kitronik-I2C-16-servo-dg#9ed5444d24465b5d1dff6c6d54f06276a686d3bd"
     },
     "files": [
         "main.blocks",
