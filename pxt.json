@@ -5,7 +5,7 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "pxt-kitronik-I2C-16-servo": "github:dgallichan/pxt-kitronik-I2C-16-servo-dg#9ed5444d24465b5d1dff6c6d54f06276a686d3bd"
+        "pxt-kitronik-I2C-16-servo": "github:dgallichan/pxt-kitronik-i2c-16-servo-dg#44039cd273fefa897aab327a37528643d8a11fc3"
     },
     "files": [
         "main.blocks",
@@ -20,7 +20,7 @@
         "branch": "v3.0.67",
         "tag": "v3.0.67",
         "commits": "https://github.com/microsoft/pxt-microbit/commits/b1dd6c3bcb9b2df57dfdd0bc4442971d81a1859d",
-        "target": "5.0.12",
+        "target": "6.0.15",
         "pxt": "6.0.39",
         "targetId": "microbit"
     },
